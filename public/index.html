@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>The Weather Here</title>
+</head>
+<body>
+  <h1>The Weather Here</h1>
+  <div><a href="/">check-in</a> | <a href="/logs">view check-ins</a></div>
+  <p><span id="lat"></span>º, <span id="lon"></span>º</p>
+  <p>
+    We are at <strong><span id="location"></span></strong>, <span id="country"></span>.<br>
+    The weather here is <strong><span id="summary"></span></strong> with a temperature of <strong><span id="temperature"></span></strong>º<br>
+    <br>
+    The air quality at the nearest location <strong><span id="aq_location"></span></strong>, measured on date: <span id="aq_date"></span> are: <br>
+    <ul>
+      <li><strong><span id="pm25"></span> <span id="pm25_value"></span></strong> <span id="pm25_unit"></span></li>
+      <li><strong><span id="pm10"></span> <span id="pm10_value"></span></strong> <span id="pm10_unit"></span></li>
+      <li><strong><span id="so2"></span> <span id="so2_value"></span></strong> <span id="so2_unit"></span></li>
+      <li><strong><span id="no2"></span> <span id="no2_value"></span></strong> <span id="no2_unit"></span></li>
+      <li><strong><span id="o3"></span> <span id="o3_value"></span></strong> <span id="o3_unit"></span></li>
+    </ul>
+  </p>
+  <button id="checkin">check-in</button>
+
+  <script src=checkin.js></script>
+</body>
+</html>

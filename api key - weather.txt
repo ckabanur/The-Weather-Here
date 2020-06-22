@@ -1,0 +1,6 @@
+weatherapi.com
+signin: ckabanur@gmail.com, Pranav99
+api key: 6c87dd2e12904443a1761609202106
+
+example call:
+http://api.weatherapi.com/v1/current.json?key=6c87dd2e12904443a1761609202106&q=37.8267, -122.4233
