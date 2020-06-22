@@ -7,7 +7,10 @@ require('dotenv').config()
 // console.log(process.env)
 
 const app = express()
-app.listen(3000, () => console.log("Listning on port 3000..."))
+// app.listen(3000, () => console.log("Listning on port 3000...")) // alternatively, when u host the site on a hosting service, use the below setup
+const port = process.env.port || 3000
+app.listen(port, () => console.log(`Starting at server port ${port}...`))
+
 app.use(express.static('public'))
 app.use(express.json({ limit: '1mb' }))
 
